@@ -3,98 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cổng thông tin casino trực tuyến - Tin tức mới nhất về các trò chơi casino.">
-    <meta name="keywords" content="casino, trò chơi, trực tuyến, tin tức, đánh giá">
-    <title>Cổng Thông Tin Casino Trực Tuyến</title>
+    <title>Chơi Nổ Hũ - Trúng Jackpot Ngay!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background: linear-gradient(to right, #FF512F, #F09819);
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        nav {
-            float: right;
-            margin-top: 10px;
-        }
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        nav ul li {
-            display: inline;
-            margin-left: 5px;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            background-color: #FF512F;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px 0;
+        }
+
+        .cta-button:hover {
+            background-color: #F09819;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            margin: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .highlight {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
             margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">Cổng Thông Tin Casino Trực Tuyến</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="about.html">Giới thiệu</a></li>
-                    <li><a href="news.html">Tin tức</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <div class="container">
-        <div class="content">
-            <h2>Bài Viết Mới Nhất</h2>
-            <!-- Danh sách bài viết -->
-            <ul>
-                <li><a href="bai-viet-1.html">Hướng dẫn chơi Poker trực tuyến</a></li>
-                <li><a href="bai-viet-2.html">Top 5 trò chơi casino năm 2024</a></li>
-                <li><a href="bai-viet-3.html">Đánh giá các sòng bạc uy tín</a></li>
-            </ul>
+        <h1>Chơi Nổ Hũ - Trúng Jackpot Ngay!</h1>
+        <p>Tham gia ngay để trải nghiệm cảm giác thắng lớn với Nổ Hũ. Cơ hội trúng jackpot với phần thưởng khủng đang chờ đón bạn!</p>
+        <button class="cta-button" onclick="redirectToLoading()">Tham gia ngay</button>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Phần Thưởng Hấp Dẫn</h3>
+                <p>Nhận ngay các phần thưởng hàng ngày và cơ hội trúng jackpot lớn.</p>
+            </div>
+            <div class="feature">
+                <h3>Đảm Bảo An Toàn</h3>
+                <p>Chơi game an toàn với hệ thống bảo mật cao cấp, bảo vệ thông tin người chơi.</p>
+            </div>
+            <div class="feature">
+                <h3>Đa Dạng Trò Chơi</h3>
+                <p>Khám phá nhiều trò chơi hấp dẫn, phù hợp với mọi sở thích của bạn.</p>
+            </div>
+        </div>
+        
+        <div class="highlight">
+            <p>Hàng ngàn người chơi đã thắng lớn, bạn có muốn là người tiếp theo?</p>
         </div>
     </div>
 
     <footer>
-        <p>Cổng Thông Tin Casino Trực Tuyến &copy; 2024</p>
-        <p><a href="#">Chính sách bảo mật</a> | <a href="#">Điều khoản sử dụng</a></p>
+        <p>&copy; 2024 Nổ Hũ Online - All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function redirectToLoading() {
+            window.location.href = "loading.html";
+        }
+    </script>
 </body>
 </html>
